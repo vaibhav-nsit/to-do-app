@@ -26,3 +26,9 @@ def editItemByName(oldName, newName):
     list[index] = newName
     print(f"Writting at {index} Value {newName}")
     writelistinfile(list)
+
+def removeItemByName(name):
+    list = getListFromFile()
+    list.remove(name)
+    writelistinfile(list)
+    print(f"Removing Value {name}")
